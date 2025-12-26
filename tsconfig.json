@@ -1,0 +1,28 @@
+{
+  "files": [],
+  "references": [
+    { "path": "./tsconfig.app.json" },
+    { "path": "./tsconfig.node.json" }
+  ],
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+    "noImplicitAny": false,
+    "noUnusedParameters": false,
+    "skipLibCheck": true,
+    "allowJs": true,
+    "noUnusedLocals": false,
+    "strictNullChecks": false,
+
+    // 👇 Added for animejs and other CommonJS modules
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+
+    // Optional: makes import/export cleaner
+    "moduleResolution": "node",
+    "module": "esnext",
+    "target": "esnext"
+  }
+}
